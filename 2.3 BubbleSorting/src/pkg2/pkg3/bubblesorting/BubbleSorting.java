@@ -1,21 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package pkg2.pkg3.bubblesorting;
 
-/**
- *
- * @author breno
- */
 public class BubbleSorting {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public void bubblesorting(int vet[]){
+        for(int i =0; i<5; i++){
+            for(int j = 0; j<4 ;j++){
+                if(vet[j]>vet[j+1]){
+                    aux = vet[j];
+                    vet[j] = vet[j+1];
+                    vet[j+1] = aux;
+                }
+            }
+        }
     }
-    
 }
